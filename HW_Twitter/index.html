@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="https://kit.fontawesome.com/e6db3333ec.js" crossorigin="anonymous"></script>
+
+    <title>Tweeter</title>
+
+</head>
+
+<body>
+    <div id="page">
+        <header id="header">
+            <div class="header_menu">
+                <i class="fa-brands fa-twitter logo"></i>
+                <div class="top">
+                    <a class="home" href="#"> Home</a>
+                    <a href="#"> <img src="./img/star.png" alt="" class="drop_aside"></a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search Twitter ">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+
+        </header>
+        <nav id="nav">
+            <div class="menu">
+
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-regular fa-hashtag"></i>Explore</a></li>
+                    <li><a href="#"><i class="fa-regular fa-bell"></i>Notifications</a></li>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i>Messages</a></li>
+                    <li><a href="#"><i class="fa-regular fa-bookmark"></i>Bookmarks</a></li>
+                    <li><a href="#"><i class="fa-solid fa-sheet-plastic"></i>Lists</a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i>Profile</a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle"></i>More</a></li>
+                </ul>
+                <button class="button">Tweet</button>
+            </div>
+
+            <div class="my_page">
+                <div class="me">
+                    <img class="my_photo" src="./img/user-photo.jpg" alt="user photo">
+                    <div class="my_info">
+                        <span class="my_name">Victor UX/UI</span>
+                        <span class="my_username">@victoruxui</span>
+                    </div>
+                </div>
+                <div class="dip">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </nav>
+        <section id="my_tweet">
+            <div class="send_form">
+                <img class="my_photo" src="./img/user-photo.jpg" alt="user photo">
+                <form class="form" action="" aria-placeholder="">
+                    <input type="text" placeholder="Hello I’m a product designer">
+
+                    <div class="menu_send">
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-gifts"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-grip-lines-vertical"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-smile"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-calendar"></i></a></li>
+                        </ul>
+                        <div class="menu_button">
+                            <i class="fa-regular fa-circle"></i>
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <button class="button">Tweet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <aside id="aside">
+            <div class="asside_conteiner">
+                <div class="news block_border ">
+                    <h3>What’s happening</h3>
+                    <div class="part style">
+                        <div class="descr">
+                            <p class="fin">Trending in Colombia</p>
+                            <p class="fat">What’s happening</p>
+                            <p class="fin">16.9K Tweets</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="part style">
+                        <div class="descr">
+                            <p class="fin">Trending in Colombia</p>
+                            <p class="fat">What’s happening</p>
+                            <p class="fin">16.9K Tweets</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="part2 style">
+                        <div class="descr">
+                            <p><img src="./img/aside-user-photo.png" alt="logo">Trending in Colombia <span>This
+                                    morning</span></p>
+                            <p class="fat">The pros and cons of the new iPhone - Tips and tricks</p>
+                        </div>
+                        <img src="./img/aside-photo.jpg" alt="">
+                    </div>
+                    <div class="part2 style">
+                        <div class="descr">
+                            <p><img src="./img/aside-user-photo.png" alt="logo">Trending in Colombia <span>This
+                                    morning</span></p>
+                            <p class="fat">The pros and cons of the new iPhone - Tips and tricks</p>
+                        </div>
+                        <img src="./img/aside-photo.jpg" alt="">
+                    </div>
+                    <div class="part style">
+                        <div class="descr">
+                            <p class="fin">Trending in Colombia</p>
+                            <p class="fat">What’s happening</p>
+                            <p class="fin">16.9K Tweets <span>#GoodMorning</span></p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="link style">
+                        <a href="#">Show more</a>
+                    </div>
+                </div>
+
+
+                <div class="fallow block_border ">
+                    <h3>Who to follow</h3>
+                    <div class="my_page  style ">
+                        <div class="me ">
+                            <img class="my_photo" src="./img/fallow.png" alt="user photo">
+                            <div class="my_info">
+                                <span class="my_name">Elon Musk</span>
+                                <span class="my_username">@elonmusk</span>
+                            </div>
+                        </div>
+                        <div class="dip">
+                            <button id="follow">Follow</button>
+                        </div>
+                    </div>
+                    <div class="my_page style">
+                        <div class="me">
+                            <img class="my_photo" src="./img/fallow2.png" alt="user photo">
+                            <div class="my_info">
+                                <span class="my_name">Dogecoin</span>
+                                <span class="my_username">@dogecoin</span>
+                            </div>
+                        </div>
+                        <div class="dip">
+                            <button id="follow">Follow</button>
+                        </div>
+                    </div>
+                    <div class="link style">
+                        <a href="#">Show more</a>
+                    </div>
+                </div>
+
+
+                <div class="topic_follow block_border ">
+                    <h3>Topics to follow</h3>
+                    <div class="my_page style">
+                        <div class="me ">
+                            <div class="my_info">
+                                <span class="my_name">UX Design</span>
+                                <span class="my_username">Computer programming</span>
+                            </div>
+                        </div>
+                        <div class="dip">
+                            <button id="follow">Follow</button>
+                        </div>
+                    </div>
+                    <div class="my_page style">
+                        <div class="me">
+                            <div class="my_info">
+                                <span class="my_name">Technology</span>
+                                <span class="my_username">All about technology</span>
+                            </div>
+                        </div>
+                        <div class="dip">
+                            <button id="follow">Follow</button>
+                        </div>
+                    </div>
+                    <div class="my_page style">
+                        <div class="me">
+                            <div class="my_info">
+                                <span class="my_name">Python</span>
+                                <span class="my_username">Computer programming</span>
+                            </div>
+                        </div>
+                        <div class="dip">
+                            <button id="follow">Follow</button>
+                        </div>
+                    </div>
+                    <div class="link style">
+                        <a href="#">Show more</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main id="main">
+            <div class="main_scrols">
+                <div class="main_scroll">
+                    <div class="don">
+                        <p class="likeed">
+                            <i class="fa-solid fa-heart"></i>Figma Liked
+                        </p>
+                        <img src="./img/user-photo-don.jpg" alt="" class="customer_logo">
+                        <div class="messege">
+                            <div class="top_messege">
+                                <div class="title_messege">
+                                    <p class="user_mame">Don Notman
+                                        <span>@jnd1er 1min</span>
+                                    </p>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <p class="descr">
+                                The DesignLab is doing major work on Community-Driven Design, with several different
+                                variants. If you are working in this area, submit a paper to the DIS conference here in
+                                San
+                                Diego (see DesignLab posting below).... https://facebook.com/don.norman.18/...
+                            </p>
+                            <ul class="actions">
+                                <li><a href="#"><img src="./img/comment1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/retweet2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/heart3.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/share4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_scroll">
+                    <div class="don">
+                        <p class="likeed">
+                            <i class="fa-solid fa-heart"></i>Figma Liked
+                        </p>
+                        <img src="./img/user-photo-phunt.jpg" alt="" class="customer_logo">
+                        <div class="messege">
+                            <div class="top_messege">
+                                <div class="title_messege">
+                                    <p class="user_mame">Product Hunt 😸 <i class="fa-solid fa-badge-check"></i>
+                                        <span>@jnd1er 1min</span>
+                                    </p>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <p class="descr">
+                                Congrats
+                                @collectedview
+                                for winning a Product Hunt T-shirt! DM us to claim your prize.
+                            </p>
+                            <img src="./img/content-image.jpg" alt="" class="img_content">
+                            <ul class="actions">
+                                <li><a href="#"><img src="./img/comment1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/retweet2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/heart3.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/share4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main_scroll">
+                    <div class="don">
+                        <p class="likeed">
+                            <i class="fa-solid fa-heart"></i>Figma Liked
+                        </p>
+                        <img src="./img/Ellipse 9133333.png" alt="" class="customer_logo">
+                        <div class="messege">
+                            <div class="top_messege">
+                                <div class="title_messege">
+                                    <p class="user_mame">Y Combinator
+                                        <span>@jnd1er 15min</span>
+                                    </p>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <p class="descr">
+                                YC W14's
+                                @NooraHealth
+                                launched an NFT auction to save thousands of lives. Read why
+                                @paulg
+                                bid here: http://paulgraham.com/nft.html
+                            </p>
+                            <ul class="actions">
+                                <li><a href="#"><img src="./img/comment1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/retweet2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/heart3.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/share4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main_scroll">
+                    <div class="don">
+                        <p class="likeed">
+                            <i class="fa-solid fa-heart"></i>Figma Liked
+                        </p>
+                        <img src="./img/user-photo-don.jpg" alt="" class="customer_logo">
+                        <div class="messege">
+                            <div class="top_messege">
+                                <div class="title_messege">
+                                    <p class="user_mame">Don Notman
+                                        <span>@jnd1er 1min</span>
+                                    </p>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <p class="descr">
+                                The DesignLab is doing major work on Community-Driven Design, with several different
+                                variants. If you are working in this area, submit a paper to the DIS conference here in
+                                San
+                                Diego (see DesignLab posting below).... https://facebook.com/don.norman.18/...
+                            </p>
+                            <ul class="actions">
+                                <li><a href="#"><img src="./img/comment1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/retweet2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/heart3.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/share4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_scroll">
+                    <div class="don">
+                        <p class="likeed">
+                            <i class="fa-solid fa-heart"></i>Figma Liked
+                        </p>
+                        <img src="./img/user-photo-phunt.jpg" alt="" class="customer_logo">
+                        <div class="messege">
+                            <div class="top_messege">
+                                <div class="title_messege">
+                                    <p class="user_mame">Product Hunt 😸 <i class="fa-solid fa-badge-check"></i>
+                                        <span>@jnd1er 1min</span>
+                                    </p>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <p class="descr">
+                                Congrats
+                                @collectedview
+                                for winning a Product Hunt T-shirt! DM us to claim your prize.
+                            </p>
+                            <img src="./img/content-image.jpg" alt="" class="img_content">
+                            <ul class="actions">
+                                <li><a href="#"><img src="./img/comment1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/retweet2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/heart3.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/share4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main_scroll">
+                    <div class="don">
+                        <p class="likeed">
+                            <i class="fa-solid fa-heart"></i>Figma Liked
+                        </p>
+                        <img src="./img/Ellipse 9133333.png" alt="" class="customer_logo">
+                        <div class="messege">
+                            <div class="top_messege">
+                                <div class="title_messege">
+                                    <p class="user_mame">Y Combinator
+                                        <span>@jnd1er 15min</span>
+                                    </p>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <p class="descr">
+                                YC W14's
+                                @NooraHealth
+                                launched an NFT auction to save thousands of lives. Read why
+                                @paulg
+                                bid here: http://paulgraham.com/nft.html
+                            </p>
+                            <ul class="actions">
+                                <li><a href="#"><img src="./img/comment1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/retweet2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/heart3.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/share4.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

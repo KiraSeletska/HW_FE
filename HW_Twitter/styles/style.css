@@ -1,0 +1,513 @@
+/*
+Извините за бардак, я бы, возможно, смгла сделать/исправить больше, но уверена,
+что в проекте и так ошибок на год вперед. Это и грязный код, и лишние стили, отступы,
+и не такие выравнивания и много-много другого. Но мы не разу не разбирали домашние задания по верстке, 
+поэтому я чесно несу свои ошибки дальше (как и многие другие, особенно без опыта). 
+
+Наверное, если бы мне не нужна была коректировка и подсказки так сильно, я бы не осмелилась 
+отправлять такой кривой и сырой проект. 
+
+Я старалась привести его хоть в какой-то порядок, но чем больше я правлю, 
+тем больше надо править, а время подходит к концу - все все равно не успею.
+
+Тут определенно есть простые ошибки по невнимательности, элементарыне, но я их уже не вижу - глаз замылен.
+
+Извините, что вам придется смотреть на ЭТО
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+li {
+  direction: none;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+}
+a {
+  color: black;
+}
+p {
+  margin: 0;
+}
+i {
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.home {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f1419;
+}
+/*Вся страница***********************************************************************************/
+#page {
+  background-color: rgb(255, 255, 255);
+  padding: 0 105px;
+  max-width: 1440px;
+  margin: 10px auto;
+  display: grid;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-template:
+    "header header header"
+    "nav tweet aside"
+    "nav main aside";
+  grid-template-columns: 275px 600px 350px;
+  grid-template-rows: 54px 160px 1fr;
+}
+
+/*Общие стили************************************************************************************/
+
+button {
+  /*Кнопка общая*/
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.my_page {
+  /*Форма пользователя*/
+  align-items: end;
+}
+.my_page {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  width: 251px;
+}
+.me {
+  height: 50px;
+  width: 180px;
+}
+.my_photo {
+  float: left;
+}
+.my_info {
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-left: 10px;
+}
+.my_name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f1419;
+}
+.my_username {
+  font-weight: 400;
+  font-size: 15px;
+  color: #5b7083;
+}
+/*********************HEADER **********************************************************/
+#header {
+  grid-area: header;
+  background-color: white;
+  height: 100%;
+}
+#header .header_menu {
+  width: 100%;
+  display: grid;
+  align-items: stretch;
+  justify-content: stretch;
+  grid-template: "header1 header2 header3";
+  grid-template-columns: 275px 600px 350px;
+  grid-template-rows: auto;
+}
+#header .header_menu .logo {
+  grid-area: header1;
+  color: #1da1f2;
+  font-size: 24px;
+  border-right: 1px solid rgb(220, 220, 220);
+}
+
+#header .header_menu .top {
+  grid-area: header2;
+  align-items: center;
+  padding: 10px;
+}
+#header .header_menu .search {
+  grid-area: header3;
+}
+#header .header_menu .top {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(220, 220, 220);
+}
+#header .header_menu .search form {
+  background: #ebeef0;
+  color: #5b7083;
+  border-radius: 22px;
+  position: relative;
+  width: auto;
+  height: 44px;
+  margin: 10px 2px 0 17px;
+}
+#header .header_menu .search input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+#header .header_menu .search > button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+#header .header_menu .search input {
+  width: 85%;
+  height: 44px;
+}
+#header .header_menu .search button {
+  background-color: #ebeef0;
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+  position: absolute;
+  left: 5px;
+}
+#header .header_menu .search button::before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #5b7083;
+}
+#header .header_menu .search form {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*Меню навигации слева(первый грид-блок)**************************************************/
+#nav {
+  height: 100%;
+  grid-area: nav;
+  background-color: #ffffff;
+  padding: 2px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid rgb(220, 220, 220);
+}
+#nav .menu > i {
+  color: #1da1f2;
+  padding: 10px;
+  font-size: 24px;
+}
+#nav a:hover {
+  color: #1da1f2;
+}
+#nav .button {
+  padding: 10px;
+  width: 225px;
+  height: 48px;
+}
+
+/*Грид-блок Tweet - окно для быстрого твита***************************************************/
+#my_tweet {
+  grid-area: tweet;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(220, 220, 220);
+  border-top: none;
+}
+#my_tweet .my_photo {
+  margin: 10px;
+}
+#my_tweet input {
+  width: 100%;
+  height: 90px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+input [type="text" i] {
+  padding: 0;
+}
+#my_tweet .top p {
+  margin: 10px;
+  font-weight: 800;
+}
+#my_tweet i {
+  font-size: 20px;
+  color: #1da1f2;
+}
+
+#my_tweet ul {
+  display: flex;
+  padding-left: 0;
+}
+#my_tweet a:hover {
+  color: #1da1f2;
+}
+#my_tweet .send_form .form {
+  height: 144px;
+  margin-left: 80px;
+  flex-direction: column;
+}
+#my_tweet .send_form .menu_send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 5px 5px 0;
+}
+#my_tweet button {
+  width: 74px;
+  height: 40px;
+}
+.menu_button i:hover {
+  color: #1da1f2;
+}
+
+/******************боковая панель *********************************************************************/
+#aside {
+  height: auto;
+  grid-area: aside;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgb(220, 220, 220);
+  padding-left: 4px;
+}
+#aside a {
+  color: #1da1f2;
+  padding: 12px 0 12px 16px;
+}
+
+#aside .news {
+  border-radius: 20px 20px 0px 0px;
+}
+#aside .part {
+  display: flex;
+  justify-content: space-between;
+}
+#aside .part span {
+  color: #1da1f2;
+}
+#aside .part2 {
+  display: flex;
+  justify-content: space-between;
+}
+#aside .part2 span {
+  color: #5b7083;
+  font-size: 13px;
+  line-height: 16px;
+}
+#aside .part2 img {
+  margin: 0 5px 0 0;
+}
+.fin {
+  font-size: 13px;
+  line-height: 16px;
+  color: #5b7083;
+}
+.fat {
+  color: #0f1419;
+  font-size: 15px;
+  line-height: 20px;
+}
+#aside .part i {
+  float: left;
+}
+#follow {
+  width: 79px;
+  height: 32px;
+  color: #1da1f2;
+  background: white;
+  border: 1px solid #1da1f2;
+  border-radius: 20px;
+  outline: none;
+}
+#aside h3 {
+  margin-left: 17px;
+}
+#aside .my_page {
+  width: 100%;
+  height: 70px;
+}
+.link {
+  padding: 12px 16px;
+  height: 44px;
+}
+#aside .my_page .me .my_info .my_username {
+  font-size: 13px;
+}
+
+.style:not(:last-child) {
+  /*стиль бля aside блока*/
+  padding: 12px 16px;
+  margin: 1px;
+  background: #f7f9fa;
+  box-shadow: 0px 1px 0px #eff1f2;
+  min-height: 44px;
+}
+.block_border {
+  border-radius: 20px;
+  box-shadow: 0px 1px 0px #eff1f2;
+  padding-top: 12px;
+  margin: 12px 0 12px;
+}
+/*****************MAIN*****************************************************************************/
+
+#main {
+  /*Главное поле со скролом*/
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#main .main_scrolls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgb(220, 220, 220);
+}
+#main .main_scroll {
+  border: 1px solid rgb(220, 220, 220);
+}
+#main::-webkit-scrollbar {
+  width: 0;
+}
+.messege {
+  margin: 0 17px 0px 76px;
+}
+.title_messege {
+  display: flex;
+  justify-content: space-between;
+}
+.customer_logo {
+  float: left;
+  margin: 10px;
+}
+.actions {
+  display: flex;
+}
+.actions a {
+  margin-right: 80px;
+}
+
+/**************************MEDIA******************************************************************************************************/
+
+@media (max-width: 768px) {
+  /*Грид ля всего блока (моб размеры - 768 и меньше)-*/
+
+  #page {
+    background-color: rgb(255, 255, 255);
+
+    padding: 0;
+    margin: auto;
+    width: 390px;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template:
+      "header"
+      "main"
+      "tweet"
+      "aside"
+      "nav";
+    grid-template-columns: 390px;
+    grid-template-rows: auto;
+  }
+  ul {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  #header .header_menu {
+    /*-Грид для header-*/
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    align-items: stretch;
+    justify-content: stretch;
+    grid-template:
+      "header1_mob"
+      "header2_mob";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #header .header_menu .logo {
+    grid-area: header1_mob;
+    border-bottom: 1px solid rgb(220, 220, 220);
+  }
+  #header .header_menu .top {
+    grid-area: header1_mob;
+    margin-left: 30px;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid rgb(220, 220, 220);
+  }
+  #header .header_menu .search {
+    grid-area: header2_mob;
+    margin: 10px 12px;
+  }
+  #header .header_menu .search form {
+    margin: 0;
+  }
+
+  #my_tweet ul {
+    display: none;
+  }
+  .menu_button i {
+    display: none;
+  }
+  #my_tweet button {
+    display: inline;
+  }
+  #my_tweet form {
+    padding: 0;
+    border: none;
+  }
+  #my_tweet form input {
+    width: 70%;
+    border: none;
+  }
+  #my_tweet .send_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+  }
+  #my_tweet .send_form .form {
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    border: none;
+  }
+
+  .img_content {
+    /*уменьшение картинок в посте*/
+    width: 100%;
+  }
+  .actions a {
+    /*удаление отступов в активнх ссылках постта*/
+    margin: 0;
+  }
+  .actions {
+    /*новое выравнивание активных ссылк постта*/
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav {
+    /*просто не хочу их видеть*/
+    display: none;
+  }
+  #aside {
+    /*просто не хочу их видеть*/
+    display: none;
+  }
+}
