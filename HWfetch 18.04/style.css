@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+}
+.user-container {/*ROOT*/
+  /* border: 1px solid black;*/
+  width: 500px;
+  margin: auto;
+  padding: 15px;
+}
+.mainConteiner{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+  background-color: rgb(255, 248, 240);
+padding-top: 5px;
+}
+
+.userContainer{
+ /* border: 1px solid rgb(223, 16, 16);*/
+  display: grid;
+grid-template-areas: ". name photo . ."
+                "btnL name photo . btnR"
+                ". name photo . ."
+;
+
+grid-template-columns: 20px 4fr 1fr 20px 20px;
+grid-template-rows: 1fr 3fr 1fr;
+align-items: center;
+
+
+}
+
+.name {
+ /*border: 1px solid rgb(255, 155, 155);*/
+  font-size: 25px;
+  color: rgb(80, 80, 80);
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+.emale {
+ /* border: 1px solid rgb(79, 206, 25);*/
+  font-size: 10px;
+  color: rgb(143, 143, 143);
+
+}
+.userInfo{
+  grid-area: name;
+  margin: 15px;
+}
+.userPhoto{
+ /* border: 1px solid rgb(0, 0, 0);*/
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-image: url(./img/61e852831fb1bbd9027b243414f37786.svg);
+opacity: 0.3;
+}
+.numUser{
+ /* border: 1px solid rgb(188, 25, 206);*/
+  width: 30px;
+font-size: 10px;
+color: gray;
+padding-left: 3px;
+
+}
+.userInfo2{
+  grid-area: photo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightBtn {
+  background-color: rgb(207, 207, 207);
+  border: none;
+  width: 20px;
+  height: 50px;
+  grid-area: btnR;
+}
+.leftBtn {
+  background-color: rgb(207, 207, 207);
+  border: none;
+  width: 20px;
+  height: 50px;
+  grid-area: btnL;
+}
+.stateBTN{
+  background-color: rgb(207, 207, 207);
+  border: none;
+  width: 50px;
+
+}
+.post {
+  /*border: 1px solid rgb(39, 211, 79);*/
+  border-bottom: 1px ridge rgb(182, 182, 182);
+  margin: 10px;
+  font-size: 15px;
+}
+.postsTitle{
+    margin: 10px 0 5px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.postsDescr{
+  color: rgb(83, 83, 83);
+}
+
+.errorMessage{
+  width: 400px;
+  height: 20px;
+border: 1px double rgb(83, 83, 83);
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
+  font-size: 16px;
+  opacity: 1;
+  }
+
+.errorMessageOff{
+  width: 400px;
+  height: 20px;
+border: 1px double rgb(83, 83, 83);
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
+  font-size: 16px;
+  transition: 1s;
+  opacity: 0;
+  }
