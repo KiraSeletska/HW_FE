@@ -1,0 +1,66 @@
+button{
+  background-color: rgb(181, 181, 181);
+  border: none;
+  border-radius: 5px;
+  color: white;
+margin: 5px;
+}
+
+.done {
+  text-decoration: line-through;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 10px;
+ border: 1px solid black;
+ border-radius: 5px;
+ border: none;
+ border-bottom: 1px solid grey;
+}
+.todo{
+ display: flex;
+ justify-content: space-between;
+ width: 400px;
+ margin: 10px;
+border: 1px solid black;
+border-radius: 5px;
+border: none;
+border-bottom: 1px solid grey;
+}
+.hide{
+  display: none;
+}
+
+.form{
+  width: 400px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.form > input{
+  width: 345px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline:none;
+  background-color: rgb(222, 222, 222);
+}
+.addbtn:hover{
+color: rgb(165, 255, 191);
+
+}
+.stateBtn{
+  font-size: 10px;
+  color: rgb(131, 255, 8);
+  width: 50px;
+  height: 20px;
+  background-color: rgb(87, 87, 87);
+}
+.buttonMenu{
+  display: flex;
+  justify-content: flex-end
+}
+.buttonMenu button{
+  width: 70px;
+}
+.deletBtn:hover{
+color: rgb(248, 114, 114);
+}
