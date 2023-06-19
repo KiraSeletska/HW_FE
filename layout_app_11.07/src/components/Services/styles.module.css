@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+.image{
+    height: 80px;
+    width: 60px;
+}
+.wrapper {
+    padding: 110px 10vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    border-top: 1px solid #C2C2C2;
+    position: relative;
+}
+.wrapper::before {
+    content: "OUR SERVICES";
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    color: #C2C2C2;
+    padding: 0 47px;
+    background: #ffffff;
+}
+
+.cardWrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.textWrapper {
+    font-size: 28px;
+    line-height: 32px;
+    width: 290px;
+}
+
+.cardHeader {
+    margin-bottom: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cardText {
+    font-size: 14px;
+    color: #B2B2B2;
+}

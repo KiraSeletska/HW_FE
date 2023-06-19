@@ -1,0 +1,62 @@
+[
+    {
+      "title": "lightspeed",
+      "id": 1,
+      "image": "../clientsLogo/logo-lightspeed.svg"
+    },
+    {
+      "title": "trvl",
+      "id": 2,
+      "image": "../clientsLogo/logo-trvl.svg"
+    },
+    {
+      "title": "spiderstrategies",
+      "id": 3,
+      "image": "../clientsLogo/logo-spider-strategies.svg"
+    },
+    {
+      "title": "tripadvisor",
+      "id": 4,
+      "image": "../clientsLogo/logo-tripadvisor.svg"
+    },
+    {
+      "title": "shutterfly",
+      "id": 5,
+      "image": "../clientsLogo/logo-shutterfly.svg"
+    },
+    {
+      "title": "decos",
+      "id": 6,
+      "image": "../clientsLogo/logo-decos.svg"
+    },
+    {
+      "title": "tiqets",
+      "id": 7,
+      "image": "../clientsLogo/logo-tiqets.svg"
+    },
+    {
+      "title": "hotelchamp",
+      "id": 8,
+      "image": "../clientsLogo/logo-hotelchamp.svg"
+    },
+    {
+      "title": "flitsmeister",
+      "id": 9,
+      "image": "../clientsLogo/logo-flitsmeister.svg"
+    },
+    {
+      "title": "sap",
+      "id": 10,
+      "image": "../clientsLogo/logo-sap.svg"
+    },
+    {
+      "title": "redkix",
+      "id": 11,
+      "image": "../clientsLogo/logo-redkix.svg"
+    },
+    {
+      "title": "nos",
+      "id": 12,
+      "image": "../clientsLogo/logo-nos.svg"
+    }
+  ]

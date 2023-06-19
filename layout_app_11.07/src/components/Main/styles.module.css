@@ -1,0 +1,20 @@
+.wrapperMain {
+    margin: 0px 10vw 110px;
+}
+
+.headerMain {
+    margin: 0;
+    font-size: 57px;
+}
+
+.textMain {
+    width: 740px;
+    font-size: 32px;
+    line-height: 51px;
+    margin-top: 32px;
+    margin-bottom: 70px;
+}
+
+.button {
+    width: 235px;
+}

@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Vadim",
+      "position": "Managing Director",
+      "id": 1,
+      "imagePath": "../employee/1.jpg"
+    },
+    {
+      "name": "Alex",
+      "position": "Front-end Developer",
+      "id": 2,
+      "imagePath": "../employee/2.jpg"
+    },
+    {
+      "name": "Agneshka",
+      "position": "Back-end Developer",
+      "id": 3,
+      "imagePath": "../employee/3.jpg"
+    },
+    {
+      "name": "Sergey",
+      "position": "Technology Director",
+      "id": 4,
+      "imagePath": "../employee/4.jpg"
+    },
+    {
+      "name": "Artem",
+      "position": "Mobile Developer",
+      "id": 5,
+      "imagePath": "../employee/5.jpg"
+    },
+    {
+      "name": "Evgeny",
+      "position": "Product Designer",
+      "id": 6,
+      "imagePath": "../employee/6.jpg"
+    },
+    {
+      "name": "Andrey",
+      "position": "Front-end Developer",
+      "id": 7,
+      "imagePath": "../employee/7.jpg"
+    },
+    {
+      "name": "Dmitry",
+      "position": "Back-end Developer",
+      "id": 8,
+      "imagePath": "../employee/8.jpg"
+    },
+    {
+      "name": "Tom",
+      "position": "Product Designer",
+      "id": 9,
+      "imagePath": "../employee/9.jpg"
+    }
+  ]
+  

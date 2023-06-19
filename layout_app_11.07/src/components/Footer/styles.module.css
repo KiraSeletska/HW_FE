@@ -1,0 +1,23 @@
+.wrapperFooter {
+    display: flex;
+    justify-content: space-between;
+    background: #F7F7F7;
+    padding: 20px 10vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80vw;
+}
+
+.logoFooter {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.listFooter {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}

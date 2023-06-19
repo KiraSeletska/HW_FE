@@ -1,0 +1,22 @@
+.wrapper {
+    border-top: 1px solid #C2C2C2;
+    padding: 60px 10vw 110px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 57px;
+    position: relative;
+}
+
+.wrapper::before {
+    content: "OUR CLIENTS";
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    color: #C2C2C2;
+    padding: 0 47px;
+    background: #ffffff;
+}
+
+.wrapper img {
+    justify-self: center;
+}
