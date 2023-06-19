@@ -1,0 +1,36 @@
+.productsList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.textLoading{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.headerWrapper{
+    display: flex;
+ width: 850px;
+ margin: auto;
+ height: 450px;
+border-bottom: 1px solid rgb(221, 221, 221);;
+
+}
+.wrapperaddForm{
+    width: 100%;
+    height: 100%;
+}
+.wrapperaddForm h3{
+margin: auto;
+}
+.addForm{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}

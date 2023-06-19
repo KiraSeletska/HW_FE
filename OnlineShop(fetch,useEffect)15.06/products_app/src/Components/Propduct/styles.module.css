@@ -1,0 +1,24 @@
+.itemWrapper {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    margin: 20px;
+   padding: 15px;
+    width: 200px;
+    height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+    transition: 1s;
+}
+.itemWrapper:hover{
+    transform: scale(1.1); 
+    transition: 1s;
+}
+.itemWrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+.itemWrapper p {
+    font-size: 10px;
+}
