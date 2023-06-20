@@ -1,0 +1,10 @@
+
+.addItemContainer {
+max-width: 1000px;
+  margin:auto;
+ border: 1ps solid rgb(255, 110, 110);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+
+}
