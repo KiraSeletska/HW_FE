@@ -15,7 +15,7 @@ function App() {
 
   
   const [actualTheme, setActualTheme] = useState('white')
-const [themeState, setThemeState] = useState(false)
+
 
   const url = "https://api.escuelajs.co/api/v1/products?limit=7&offset=1";
   useEffect(() => {
@@ -47,15 +47,7 @@ const [themeState, setThemeState] = useState(false)
   };
 
   const changeTheme = () => {
-    if(!themeState){
-      setActualTheme('dark')
-      setThemeState(true)
-    
-    } else {
-      setActualTheme('white')
-      setThemeState(false)
- 
-    }
+     setActualTheme(actualTheme === 'white' ? 'dark' : 'white') 
 
   }
   return (
