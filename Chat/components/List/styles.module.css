@@ -1,0 +1,15 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.message {
+    outline: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
